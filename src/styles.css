@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+.fc-timegrid-bg .fc-day-disabled {
+  background-color: #ff9f89 !important;
+  /* Example color for disabled timeslots */
+}
+
+.moving-circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moving-circle {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  position: relative;
+  animation: moveLeftRight 1s linear infinite;
+}
+
+h2.fc-toolbar-title {
+  display: inline;
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+div.fc-event {
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 3px;
+  font-weight: bold;
+}
